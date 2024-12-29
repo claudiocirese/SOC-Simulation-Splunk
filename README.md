@@ -21,7 +21,8 @@ It includes:
 - [Features](#features)
 - [Requirements](#requirements)
 - [How to Use](#how-to-use)
-   - [Sample searches for dashboard panels](#sample-searches-for-dashboard-panels)
+   - [Sample queries for dashboard panels](#sample-queries-for-dashboard-panels)
+   - [Sample queries for alerts](#sample-queries-for-alerts)
 - [Screenshots](#screenshots)
 - [Notes](#notes)
 - [License](#license)
@@ -171,6 +172,27 @@ index=<your_index> sourcetype=win_event_log ID=4625
 | stats count AS FailCount by clientip
 | where FailCount > 5
 ```
+### Handling Alerts
+
+Below are recommended actions when an alert triggers:
+
+1. **HTTP Scanning (404 Overload)**  
+   - Investigate the source IP for possible scanning.
+   - Check if it's a known vulnerability scanner or malicious source.
+   - Potentially block the IP at firewall if malicious.
+
+2. **High Error Rate**  
+   - Inspect server resources and logs for 404/500 spikes or high system load.
+   - Could be an attack or a performance issue.
+
+3. **INCIDENT_IP Scanning**  
+   - If the IP 9.9.9.9 triggers too many errors, treat it as a priority threat.
+   - Escalate to the security team for immediate action (block or in-depth analysis).
+
+4. **Windows Brute Force**  
+   - Check repeated failed logon attempts (ID=4625).
+   - Possibly lock the account or block the IP.
+   - Investigate if user credentials are compromised.
 
 ## Screenshots
 The following screenshots show parts of the simulation:
