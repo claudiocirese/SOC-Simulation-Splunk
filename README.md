@@ -83,7 +83,7 @@ This creates the following logs:
 ### 4) Build the dashboard
 - Create a new dashboard in Splunk (for example, "SOC_Dashboard").
 - Save searches as panels. Examples include HTTP Status, HTTP Activity Over Time, and so on.
-### Sample searches for dashboard panels
+### Sample queries for dashboard panels
 - **HTTP Status Code Distribution**
 ```spl 
 index=<your_index> sourcetype=apache_access
