@@ -7,9 +7,9 @@ It generates logs with fake IPs and a malicious IP to simulate scanning and
 brute force. 
 
 **Purpose**
-- Show how to generate realistic logs for training
-- Build a Splunk dashboard with multiple panels
-- Implement scheduled alerts for security scenarios
+- Show how to generate realistic logs for training.
+- Build a Splunk dashboard with multiple panels.
+- Implement scheduled alerts for security scenarios.
 
 It includes:
 - A Python script that generates fake logs (Apache Access, Apache Error, Firewall, Windows).
@@ -52,8 +52,8 @@ It includes:
   4. Windows Brute Force
 
 ## Requirements
-- Python 3 to run the script `generate_logs.py`
-- A Splunk environment (Splunk Enterprise / Free) to ingest data and view the dashboards
+- Python 3 to run the script `generate_logs.py`.
+- A Splunk environment (Splunk Enterprise / Free) to ingest data and view the dashboards.
 
 ## How to Use
 
@@ -74,7 +74,7 @@ This creates the following logs:
 - `windows_logs.txt`
 
 ### 3) Add data
-1. In Splunk, go to “Add Data” → “Upload” e select `apache_access.txt`.
+1. In Splunk, go to “Add Data” → “Upload” and select `apache_access.txt`.
    - sourcetype = `apache_access`
    - index = `<your_index>`
 2. Repeat for `apache_error.txt` (apache_error), `firewall_logs.txt` (firewall_log), 
