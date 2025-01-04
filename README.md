@@ -17,16 +17,16 @@ It includes:
 - Several Splunk alerts triggered by abnormal behaviors.
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Requirements](#requirements)
-- [How to Use](#how-to-use)
-   - [Sample queries for dashboard panels](#sample-queries-for-dashboard-panels)
-   - [Sample queries for alerts](#sample-queries-for-alerts)
-- [Screenshots](#screenshots)
-- [Notes](#notes)
-- [License](#license)
-- [Author](#author)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [How to Use](#how-to-use)
+   1. [Sample queries for dashboard panels](#sample-queries-for-dashboard-panels)
+   2. [Sample queries for alerts](#sample-queries-for-alerts)
+5. [Screenshots](#screenshots)
+6. [Notes](#notes)
+7. [License](#license)
+8. [Author](#author)
 
 
 ## Features
