@@ -36,20 +36,20 @@ It includes:
   - `firewall_logs.txt`
   - `windows_logs.txt`
 - **Splunk Dashboard** includes:
-  1. HTTP Status Code Distribution
-  2. HTTP Activity Over Time
-  3. Top Requesting IPs
-  4. Error Severity Over Time
-  5. Firewall Activity
-  6. Windows Event ID Distribution
-  7. Suspected HTTP Scanning (404/500)
-  8. Windows Brute Force Attempts (4625)
-  9. Geo Distribution of Traffic
+  -  HTTP Status Code Distribution
+  -  HTTP Activity Over Time
+  -  Top Requesting IPs
+  -  Error Severity Over Time
+  -  Firewall Activity
+  -  Windows Event ID Distribution
+  -  Suspected HTTP Scanning (404/500)
+  -  Windows Brute Force Attempts (4625)
+  -  Geo Distribution of Traffic
 - **Alerts**:
-  1. HTTP Scanning (404 Overload)
-  2. High Error Rate
-  3. INCIDENT_IP Scanning
-  4. Windows Brute Force
+  -  HTTP Scanning (404 Overload)
+  -  High Error Rate
+  -  INCIDENT_IP Scanning
+  -  Windows Brute Force
 
 ## Requirements
 - Python 3 to run the script `generate_logs.py`.
